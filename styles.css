@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: roboto;
     font-size:medium;
     font-weight: 300;
+    margin: 0;
 }
 table,th,td{
     border: 1px solid lightgray;
@@ -17,4 +21,48 @@ table{
 .centre{
     display: flex;
     justify-content: center;
+}
+.pink th, .pink td{
+    border-color: lightpink;
+}
+.khaki th, .khaki td{
+    border-color: khaki;
+}
+
+/*Navi*/
+.navi{
+    background-color: rgb(102, 151, 68);
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.navi a{
+    color: rgb(227, 233, 240);
+    text-transform: uppercase;
+    text-align: center;
+    width: 20%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 100%;
+}
+.navi a:hover{
+    background-color: rgb(227, 233, 240);
+    color: rgb(82, 126, 62);
+}
+.navi a.active{
+    background-color: rgb(82, 126, 62);
+    color: rgb(227, 233, 240);
+}
+
+/*Media Screens*/
+@media(max-width:800px){
+    body{
+        font-size: 80%;
+    }
+}
+@media(max-width:600px){
+    body{
+        font-size: 70%;
+    }
 }
