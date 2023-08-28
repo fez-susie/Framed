@@ -1,6 +1,28 @@
 * {
     box-sizing: border-box;
 }
+:root{
+    /*Green*/
+    --richGreen: #527e3e;
+    --pineGreen: #335658;
+    --notGrey: #535b46;
+    --ausGreen: #637f44;
+    --ausGreen2: #607c3c;
+    --lightGreen: #669445;
+    --lightGreen2: #669744;
+    /*Brown*/
+    --beige: #aa6c3b;
+    --red: #924229;
+    --brown: #745541;
+    --alsoNotGrey: #7b6266;
+    /*Grey*/
+    --grey: #bcb6ba;
+    --greenGrey: #cfd9d3;
+    --blueGrey: #e3e9f0;
+    --blue: #c0e0ef;
+}
+
+
 body{
     font-family: roboto;
     font-size:medium;
@@ -8,7 +30,7 @@ body{
     margin: 0;
 }
 table,th,td{
-    border: 1px solid lightgray;
+    border: 1px solid var(--blueGrey);
     border-collapse: collapse;
 }
 th,td{
@@ -23,10 +45,25 @@ table{
     justify-content: center;
 }
 .pink th, .pink td{
-    border-color: lightpink;
+    border-color: var(--red);
 }
 .khaki th, .khaki td{
-    border-color: khaki;
+    border-color: var(--blue);
+}
+
+.welcomeButton{
+    display: flex;
+    width: 20%;
+    background-color: var(--beige);
+    height:12%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+   width:25%;
+   overflow: hidden;
+   border-radius: 100%;
 }
 
 /*Navi*/
@@ -35,12 +72,13 @@ table{
     display:flex;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
 }
 .navi a{
     color: rgb(227, 233, 240);
     text-transform: uppercase;
     text-align: center;
-    width: 20%;
+    width: 25%;
     padding-top: 14px;
     padding-bottom: 14px;
     text-decoration: none;
@@ -65,4 +103,42 @@ table{
     body{
         font-size: 70%;
     }
+}
+
+
+/*Background IMG*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.backIMG {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+.subWindow{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+.mainWindow{
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+.homeNavi{
+    display: flex;
+    width: 20%;
+    background-color: var(--beige);
+    height:12%;
+    justify-content: center;
+    align-items: center;
+    background
 }
