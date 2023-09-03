@@ -148,3 +148,13 @@ body, html {
     flex-wrap: wrap;
     justify-content:space-around;
 }
+
+.hollow{
+    display: flex;
+    width: 20%;
+    background-color: var(--pineGreen);
+    height:12%;
+    justify-content: center;
+    align-items: center;
+    opacity: 60%;
+}
