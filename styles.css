@@ -142,3 +142,9 @@ body, html {
     align-items: center;
     background
 }
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
