@@ -158,3 +158,23 @@ body, html {
     align-items: center;
     opacity: 60%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:var(--grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--pineGreen); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--notGrey); 
+}
