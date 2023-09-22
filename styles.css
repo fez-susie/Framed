@@ -176,6 +176,43 @@ body, html {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--notGrey); 
+    background: var(--notGrey);
+    cursor: pointer;
 }
 
+
+h2{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contactL{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.contactS{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+.emailInput{
+    font-weight: bold;
+    text-transform: lowercase;
+}
+.butt:hover{
+    cursor: pointer;
+}
+.icon{
+    color:white;
+}
+.icon:hover{
+    color: var(--blue);
+}

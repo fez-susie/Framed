@@ -18,37 +18,44 @@
         <a href="contact.html">Contact Us</a>
     </nav>
     <!--Newsletter-->
-    <div style="height: 50%; background-color: var(--richGreen);display: flex;justify-content: center;flex-direction: column;text-align: center;">
-        <p><label for="email" style="font-size:x-large;color: white;font-weight: bold;">Sign up to our Newsletter</label></p>
+    <div style="background-color: var(--richGreen);" class="contactS">
+        <h2 for="email" style="color: white;">Sign up to our Newsletter</h2>
+        <br>
         <form>
-            <input type="email" id="email" name="email" value="lorem.ipsum@website.domain" style="width: 60%;height: 200%;font-size: large;text-align: center;">
-            <input type="button" id="submit" name="submit" value="Submit" style="width: 10%;height: 150%;margin-left: 2%;font-size: medium;">
+            <input class="emailInput" type="email" id="email" name="email" value="John.Smith63@domain" style="width: 60%;height: 200%;font-size: large;text-align: center;color: var(--richGreen);">
+            <input class="butt" type="button" id="submit" name="submit" value="Submit" style="width: 10%;height: 150%;margin-left: 2%;font-size: medium;background-color: white;border: 0;color: var(--richGreen);">
         </form>
     </div>
 
     <!--Socials-->
-    <div style="height: 50%; background-color: var(--pineGreen);display: flex;justify-content: center;flex-direction: column;text-align: center;">
-        <p style="font-size:x-large;color: white;font-weight: bold;">Connect with Us</p>
+    <div style="background-color: var(--pineGreen);" class="contactS">
+        <h2 style="color: white;">Connect with Us</h2>
+        <br>
         <div style="display: flex;flex-direction: row;justify-content: space-around;">
-            <div style="width: 10%;font-size: 100px;"><a href="https://twitter.com/?lang=en" style="color:white;"><i class="fa fa-twitter"></i></a></div>
-            <div style="width: 10%;font-size: 100px;"><a href="https://www.instagram.com/"   style="color:white;"><i class="fa fa-instagram"></i></a></div>
-            <div style="width: 10%;font-size: 100px;"><a href="https://au.linkedin.com/"     style="color:white;"><i class="fa fa-linkedin-square"></i></a></div>
-            <div style="width: 10%;font-size: 100px;"><a href="https://www.facebook.com/"    style="color:white;"><i class="fa fa-facebook-f"></i></a></div>
+            <div style="width: 10%;font-size: 100px;"><a href="https://twitter.com/?lang=en" class="icon"><i class="fa fa-twitter"></i></a></div>
+            <div style="width: 10%;font-size: 100px;"><a href="https://www.instagram.com/"   class="icon"><i class="fa fa-instagram"></i></a></div>
+            <div style="width: 10%;font-size: 100px;"><a href="https://au.linkedin.com/"     class="icon"><i class="fa fa-linkedin-square"></i></a></div>
+            <div style="width: 10%;font-size: 100px;"><a href="https://www.facebook.com/"    class="icon"><i class="fa fa-facebook-f"></i></a></div>
         </div>
     </div>
 
     <!--Contact Us-->
-    <div style="background-color: white;height: 100%;display: flex;flex-direction: column;justify-content: space-around;align-items: center;">
-        <p style="text-align: center;color:var(--pineGreen);font-size: x-large;font-weight: bold;">Contact Us</p>
-        <div style="width: 75%;display: flex;flex-direction: row; justify-content: space-around;height: 7%;">
-            <input type="email" value="lorem.ipsum@website.domain" style="width: 85%;">
-            <div style="width: 15%;text-align: center;"><input type="button" value="Submit" style="width: 75%;height: 100%;background-color: var(--pineGreen);border: 0;color:white;font-size: large;"></div>
+    <div style="background-color: white;" class="contactL">
+        <h2 style="color:var(--beige);">Contact Us</h2>
+        <div style="width: 75%;display: flex;flex-direction: row; justify-content: space-between;height: 7%;">
+            <input type="email" value="John.Smith63@domain" style="width: 85%;color: var(--beige);border-color: var(--beige);" class="emailInput">
+            <div style="width: 15%;text-align: center;"><input type="button" class="butt" value="Submit" style="width: 75%;height: 100%;background-color: var(--beige);border: 0;color:white;font-size: large;"></div>
         </div>
         <br>
-        <textarea style="width: 75%; height: 75%;"></textarea>
+        <textarea style="width: 75%; height: 75%;border-color: var(--beige);"></textarea>
         <br>
     </div>
+    
     <!--Find Us-->
-    <div style="height: 100%; background-color: blue;"></div>
+    <div style="background-color: var(--blue);" class="contactL">
+        <h2 style="color:var(--pineGreen);">Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.15318326406!2d138.62037737448787!3d-34.97782757734985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ce6be57300ef%3A0x12cb85bb9004a12e!2s2nd%20Adelaide%20Scout%20Group!5e0!3m2!1sen!2sau!4v1695357592667!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p style="color: var(--pineGreen); text-align: center;">To navigate the map, ensure curser is over the map<br>Use either the trackpad of a laptop or the controls presented by the map</p>
+    </div>
 </body>
 </html>
