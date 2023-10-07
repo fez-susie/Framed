@@ -7,9 +7,9 @@
     --pineGreen: #335658;
     --notGrey: #535b46;
     --ausGreen: #637f44;
-    --ausGreen2: #607c3c;
-    --lightGreen: #669445;
-    --lightGreen2: #669744;
+    --navi2: #607c3c;
+    --navi: #669445;
+    --lightGreen: #669744;
     /*Brown*/
     --beige: #aa6c3b;
     --red: #924229;
@@ -67,14 +67,18 @@ table{
 }
 
 /*Navi*/
-.navi{
-    background-color: rgb(102, 151, 68);
+#navi{
+    background-color: var(--navi);
     display:flex;
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
 }
-.navi a{
+#navi a{
     color: rgb(227, 233, 240);
     text-transform: uppercase;
     text-align: center;
@@ -84,12 +88,12 @@ table{
     text-decoration: none;
     font-size: 100%;
 }
-.navi a:hover{
+#navi a:hover{
     background-color: rgb(227, 233, 240);
-    color: rgb(82, 126, 62);
+    color: var(--navi2);
 }
-.navi a.active{
-    background-color: rgb(82, 126, 62);
+#navi a.active{
+    background-color: var(--navi2);
     color: rgb(227, 233, 240);
 }
 
