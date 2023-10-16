@@ -10,13 +10,13 @@
     <!--Style Sheet Links (font, etc.)-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <script src="navi.js"></script>
 </head>
 <body>
     <div class="backIMG" style="background-image: url('https://images.unsplash.com/photo-1558710763-9791081edd44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');">
-        <div id="sub_window" class="subWindow">
-            <div style="width: 75%;"></div>
-            <div class="welcomeButton" onclick="document.getElementById('main_window').style.display='flex'; document.getElementById('sub_window').style.display='none';document.getElementById('footer').style.display='block';">
-                <p style="color: white;font-variant: small-caps;">Welcome to Framed</p>
+        <div id="sub_window" style="position: relative;height: 100%;padding-right: 20%;">
+            <div class="welcomeButton" onclick="homeNavi()">
+                <p style="font-variant: small-caps;">Welcome to Frame<br>Click Here</p>
             </div>
         </div>
         <nav id="main_window" class="mainWindow" style="display: none;">

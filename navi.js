@@ -8,3 +8,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+function homeNavi(){
+  document.getElementById('main_window').style.display='flex'; document.getElementById('sub_window').style.display='none';document.getElementById('footer').style.display='block';
+}

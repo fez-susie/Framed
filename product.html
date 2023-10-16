@@ -9,20 +9,154 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
     <script src="navi.js"></script>
+    <script src="breakdown.js"></script>
 </head>
-<body>
+<body onload="standard()">
     <nav id="navi">
         <a href="index.html">Home</a>
         <a href="product.html" class="active">The Frames</a>
         <a href="about.html">About the team behind Framed</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-    <!--Infinite Scroller-->
-    <div style="background-color: cyan;" class="flexL"></div>
+    <nav class="navi">
+        <a href="index.html">Home</a>
+        <a href="product.html" class="active">The Frames</a>
+        <a href="about.html">About the team behind Framed</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    
+
+    <!--Big Image Quote-->
+    <div class="flexL backIMG" style="justify-content: end;background-image: url('https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');">
+        <div class="hollow"><p style="color: var(--blueGrey);font-weight: bold;">The Framed Family</p></div>
+        <div style="height:10%;"></div>
+    </div>
+
     <!--Breakdown-->
-    <div style="background-color: blue;" class="flexL"></div>
+    <div id="breakdown" style="height:100%;">
+        <div style="height: 10%;width: 100%;display: flex;flex-flow:row nowrap;justify-content:left;">
+            <div style="background-color: var(--red);color: white;width: 22%;text-align: center;font-weight: bold; order: 1;" class="centText"><p class="centText">Choose the model that's right for you:</p></div>
+            <div id="bijouTab" onclick="bijou()" class="centText modelTab"><p class="centText">Bijou</p></div>
+            <div id="standardTab" onclick="standard()" class="centText modelTab"><p class="centText">Standard</p></div>
+            <div id="substantialTab" onclick="substantial()" class="centText modelTab"><p class="centText">Substantial</p></div>
+        </div>
+        <div style="display: none;height: 90%;background-color: red;" id="bijouDisp">
+        </div>
+        <div style="display: grid;height: 90%;background-color: green;" id="standardDisp">
+        </div>
+        <div style="display: none;height: 90%;background-color: blue;" id="substantialDisp">
+        </div>
+    </div>
+
     <!--Feedback-->
-    <div style="background-color: lightblue;" class="flexL"></div>
+    <div id="feedback" class="flexL">
+        <!--Scroll parent div-->
+        <div class="scrollFather">
+            <div class="scrollMother">
+                <!--Feedback parent div-->
+                <div class="feedFather">
+                    <div class="feedMother">
+                        <!--User Details-->
+                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
+                            <!--Account Icon-->
+                            <div style="background-color: brown;height: 100%;">lol</div>
+                            <!--Account Name-->
+                            <p style="font-size: x-large;">John Smith</p>
+                        </div>
+                        <!--User Feedback-->
+                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
+                            </p>
+                        </div>
+                        <!--User rating-->
+                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    </div>
+                </div>
+                <!--Feedback parent div-->
+                <div class="feedFather">
+                    <div class="feedMother">
+                        <!--User Details-->
+                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
+                            <!--Account Icon-->
+                            <div style="background-color: brown;height: 100%;">lol</div>
+                            <!--Account Name-->
+                            <p style="font-size: x-large;">Verity Lambert</p>
+                        </div>
+                        <!--User Feedback-->
+                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
+                            </p>
+                        </div>
+                        <!--User rating-->
+                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    </div>
+                </div>
+                <!--Feedback parent div-->
+                <div class="feedFather">
+                    <div class="feedMother">
+                        <!--User Details-->
+                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
+                            <!--Account Icon-->
+                            <div style="background-color: brown;height: 100%;">lol</div>
+                            <!--Account Name-->
+                            <p style="font-size: x-large;">Sydney Newman</p>
+                        </div>
+                        <!--User Feedback-->
+                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
+                            </p>
+                        </div>
+                        <!--User rating-->
+                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    </div>
+                </div>
+                <!--Feedback parent div-->
+                <div class="feedFather">
+                    <div class="feedMother">
+                        <!--User Details-->
+                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
+                            <!--Account Icon-->
+                            <div style="background-color: brown;height: 100%;">lol</div>
+                            <!--Account Name-->
+                            <p style="font-size: x-large;">Terry Nation</p>
+                        </div>
+                        <!--User Feedback-->
+                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
+                            </p>
+                        </div>
+                        <!--User rating-->
+                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    </div>
+                </div>
+                <!--Feedback parent div-->
+                <div class="feedFather">
+                    <div class="feedMother">
+                        <!--User Details-->
+                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
+                            <!--Account Icon-->
+                            <div style="background-color: brown;height: 100%;">lol</div>
+                            <!--Account Name-->
+                            <p style="font-size: x-large;">Ron Grainer</p>
+                        </div>
+                        <!--User Feedback-->
+                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
+                            </p>
+                        </div>
+                        <!--User rating-->
+                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Slideshow-->
     <div style="background-color: aqua;" class="flexL"></div>
 </body>
