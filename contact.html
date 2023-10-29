@@ -18,45 +18,69 @@
         <a href="about.html">About the team behind Framed</a>
         <a href="contact.html" class="active">Contact Us</a>
     </nav>
-    <!--Newsletter-->
-    <div style="background-color: var(--richGreen);" class="flexS">
-        <h2 for="email" style="color: white;">Sign up to our Newsletter</h2>
-        <br>
-        <form>
-            <input class="emailInput" type="email" id="email" name="email" value="John.Smith63@domain" style="width: 60%;height: 200%;font-size: large;text-align: center;color: var(--richGreen);">
-            <input class="butt" type="button" id="submit" name="submit" value="Submit" style="width: 10%;height: 150%;margin-left: 2%;font-size: medium;background-color: white;border: 0;color: var(--richGreen);">
-        </form>
-    </div>
+    <nav class="navi">
+        <a href="index.html">Home</a>
+        <a href="product.html">The Frames</a>
+        <a href="about.html">About the team behind Framed</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
 
-    <!--Socials-->
-    <div style="background-color: var(--pineGreen);" class="flexS">
-        <h2 style="color: white;">Connect with Us</h2>
-        <br>
-        <div style="display: flex;flex-direction: row;justify-content: space-around;">
-            <div style="width: 10%;font-size: 100px;"><a href="https://twitter.com/?lang=en" class="icon" target="_blank"><i class="fa fa-twitter"></i></a></div>
-            <div style="width: 10%;font-size: 100px;"><a href="https://www.instagram.com/"   class="icon" target="_blank"><i class="fa fa-instagram"></i></a></div>
-            <div style="width: 10%;font-size: 100px;"><a href="https://au.linkedin.com/"     class="icon" target="_blank"><i class="fa fa-linkedin-square"></i></a></div>
-            <div style="width: 10%;font-size: 100px;"><a href="https://www.facebook.com/"    class="icon" target="_blank"><i class="fa fa-facebook-f"></i></a></div>
+    <!--Connect-->
+    <div style="display: flex;flex-flow: row wrap;">
+        <div class="side" style="background-color: var(--richGreen);text-align: center;padding: 20px;">
+            <h1 style="color: white;">Connect with Us</h1>
+            <div style="display: flex; flex-flow: row wrap;justify-content: center;font-size: 150px;">
+                <div style="display: flex; flex-flow: row wrap;justify-content: center;">
+                    <a href="https://twitter.com/?lang=en" class="icon" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/?lang=en" class="icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div style="display: flex; flex-flow: row wrap;justify-content: center;">
+                    <a href="https://twitter.com/?lang=en" class="icon" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://twitter.com/?lang=en" class="icon" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="side" style="background-color: var(--pineGreen);text-align: center;padding: 20px;">
+            <h1 style="color: white;">Subscribe to our Newsletter</h1>
+            <p style="color: white;">
+                Sign-up to our newsletter with updates from the team at Framed.
+                Be the first to hear about new updates and products.
+                Gain insight to the team.
+                Plus recieve subscriber exclusive content.
+            </p>
+            <input class="emailInput" type="email" value="John.Smith63@domain" style="font-size: large;text-align: center;color: var(--richGreen);width: 75%;height: 50px;margin: 20px;">
+            <input type="button" value="Subscribe" style="width: 150px;background-color: white;border: 0;height: 50px;font-weight: bold;color: var(--richGreen);margin: 20px;border-radius: 25px; font-size: large;">
         </div>
     </div>
 
     <!--Contact Us-->
-    <div style="background-color: white;" class="flexL">
-        <h2 style="color:var(--beige);">Contact Us</h2>
-        <div style="width: 75%;display: flex;flex-direction: row; justify-content: space-between;height: 7%;">
-            <input type="email" value="John.Smith63@domain" style="width: 85%;color: var(--beige);border-color: var(--beige);" class="emailInput">
-            <div style="width: 15%;text-align: center;"><input type="button" class="butt" value="Submit" style="width: 75%;height: 100%;background-color: var(--beige);border: 0;color:white;font-size: large;"></div>
+    <div style="background-color: var(--blue);width: 100%; margin: 0;padding: 30px;">
+        <h1 style="margin: 0;text-align: center;color: var(--red);">
+            Email Us
+        </h1>
+        <div style="display: flex;flex-flow: row wrap;justify-content: center;">
+            <input type="email" value="John.Smith63@domain" class="emailInput" style="display: block;font-size: large;text-align: center;color: var(--red);width: 500px;height: 50px;margin: 20px;border: 0;order: 1;">
+            <input type="button" value="Send" class="send" style="display: block; width: 100px;background-color: white;border: 0;height: 50px;font-weight: bold;color: var(--red);margin: 20px; font-size: large;">
+            <textarea style="display: block;width: 90%;margin: 20px;border: 0;height: 200px;color: var(--red);order: 3;min-width: 80%;max-height: 300px;min-height: 50px;">Email Message</textarea>
         </div>
-        <br>
-        <textarea style="width: 75%; height: 75%;border-color: var(--beige);"></textarea>
-        <br>
     </div>
     
     <!--Find Us-->
-    <div style="background-color: var(--blue);" class="flexL">
-        <h2 style="color:var(--pineGreen);">Find Us</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.15318326406!2d138.62037737448787!3d-34.97782757734985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ce6be57300ef%3A0x12cb85bb9004a12e!2s2nd%20Adelaide%20Scout%20Group!5e0!3m2!1sen!2sau!4v1695357592667!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p style="color: var(--pineGreen); text-align: center;">To navigate the map, ensure curser is over the map<br>Use either the trackpad of a laptop or the controls presented by the map</p>
+    <div style="background-color: var(--beige);text-align: center;padding: 30px;">
+        <h1 style="color: white;margin: 0;">
+            Find Us
+        </h1>
+        <div style="display: inline-block; width: 200px;color:white;">
+            <p style="font-variant: small-caps;">Opening Hours</h2>
+            <p style="font-weight: bold;">09:00 - 17:00</p>
+            <p style="font-weight: bold;">Monday - Thursday</p>
+        </div>
+        <div style="display: inline-block;width: 200px;color:white;">
+            <p style="font-variant:small-caps;">Address</h2>
+            <p style="font-weight: bold;">223 Angas Street</p>
+            <p style="font-weight: bold;">Adelaide, SA 5000</p>
+        </div>
+        <iframe style="border:0;width: 90%;height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.15318326406!2d138.62037737448787!3d-34.97782757734985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ce6be57300ef%3A0x12cb85bb9004a12e!2s2nd%20Adelaide%20Scout%20Group!5e0!3m2!1sen!2sau!4v1695357592667!5m2!1sen!2sau"></iframe>
     </div>
 </body>
 </html>
