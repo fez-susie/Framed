@@ -22,6 +22,10 @@
     --blue: #c0e0ef;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p.centText{
     margin: 0;
     position: absolute;
@@ -329,4 +333,8 @@ h2{
     .send{
         order: 4;
     }
+  }
+
+  a:hover{
+    cursor: pointer;
   }
