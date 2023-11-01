@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
     <script src="navi.js"></script>
     <script src="breakdown.js"></script>
+    <script src="slideshow.js"></script>
 </head>
-<body onload="standard()">
+<body onload="standard(),currentSlide(1)">
     <nav id="navi">
         <a href="index.html">Home</a>
         <a href="product.html" class="active">The Frames</a>
@@ -28,9 +29,10 @@
     
 
     <!--Big Image Quote-->
-    <div class="flexL backIMG" style="justify-content: end;background-image: url('https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80');">
-        <div class="hollow"><p style="color: var(--blueGrey);font-weight: bold;">The Framed Family</p></div>
-        <div style="height:10%;"></div>
+    <div style="text-align: center;height: 500px;background-image: url('assets/Forrest4.jpg');background-position: center;position: relative;">
+        <div style="bottom: 0;position: absolute;transform: translate(-50%);left: 50%;width: 300px;background-color: var(--pineGreen);opacity: 75%;margin: auto;padding-top: 12.5px;padding-bottom: 12.5px;">
+            <h1 style="color: white;">The Framed Family</h1>
+        </div>
     </div>
 
     <!--Breakdown-->
@@ -49,146 +51,97 @@
         </div>
     </div>
 
-    <!--Feedback-->
-    <div id="feedback" class="flexL">
-        <!--Scroll parent div-->
-        <div class="scrollFather">
-            <div class="scrollMother">
-                <!--Feedback parent div-->
-                <div class="feedFather">
-                    <div class="feedMother">
-                        <!--User Details-->
-                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
-                            <!--Account Icon-->
-                            <div style="height: 100%; width: 100px; overflow: hidden;display: flex; justify-content: center;">
-                                <img style="height: 100%;" src="assets\AT3\christopher-campbell-rDEOVtE7vOs-unsplash.jpg"></img>
-                            </div>
-                            <div style="width: 50px;"></div>
-                            <!--Account Name-->
-                            <p style="font-size: x-large;">John Smith</p>
-                        </div>
-                        <!--User Feedback-->
-                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
-                            </p>
-                        </div>
-                        <!--User rating-->
-                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    </div>
-                </div>
-                <!--Feedback parent div-->
-                <div class="feedFather">
-                    <div class="feedMother">
-                        <!--User Details-->
-                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
-                            <!--Account Icon-->
-                            <div style="height: 100%; width: 100px; overflow: hidden;display: flex; justify-content: center;">
-                                <img style="height: 100%;" src="assets\AT3\craig-mckay-jmURdhtm7Ng-unsplash.jpg"></img>
-                            </div>
-                            <div style="width: 50px;"></div>
-                            <!--Account Name-->
-                            <p style="font-size: x-large;">Verity Lambert</p>
-                        </div>
-                        <!--User Feedback-->
-                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
-                            </p>
-                        </div>
-                        <!--User rating-->
-                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    </div>
-                </div>
-                <!--Feedback parent div-->
-                <div class="feedFather">
-                    <div class="feedMother">
-                        <!--User Details-->
-                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
-                            <!--Account Icon-->
-                            <div style="height: 100%; width: 100px; overflow: hidden;display: flex; justify-content: center;">
-                                <img style="height: 100%;" src="assets\AT3\houcine-ncib-B4TjXnI0Y2c-unsplash.jpg"></img>
-                            </div>
-                            <div style="width: 50px;"></div>
-                            <!--Account Name-->
-                            <p style="font-size: x-large;">Sydney Newman</p>
-                        </div>
-                        <!--User Feedback-->
-                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
-                            </p>
-                        </div>
-                        <!--User rating-->
-                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    </div>
-                </div>
-                <!--Feedback parent div-->
-                <div class="feedFather">
-                    <div class="feedMother">
-                        <!--User Details-->
-                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
-                            <!--Account Icon-->
-                            <div style="height: 100%; width: 100px; overflow: hidden;display: flex; justify-content: center;">
-                                <img style="height: 100%;" src="assets\AT3\jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg"></img>
-                            </div>
-                            <div style="width: 50px;"></div>
-                            <!--Account Name-->
-                            <p style="font-size: x-large;">Terry Nation</p>
-                        </div>
-                        <!--User Feedback-->
-                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
-                            </p>
-                        </div>
-                        <!--User rating-->
-                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    </div>
-                </div>
-                <!--Feedback parent div-->
-                <div class="feedFather">
-                    <div class="feedMother">
-                        <!--User Details-->
-                        <div style="display: flex; flex-flow:row nowrap;justify-content: flex-start;text-align: left;height: 25%;">
-                            <!--Account Icon-->
-                            <div style="height: 100%; width: 100px; overflow: hidden;display: flex; justify-content: center;">
-                                <img style="height: 100%;" src="assets\AT3\matheus-ferrero-pg_WCHWSdT8-unsplash.jpg"></img>
-                            </div>
-                            <div style="width: 50px;"></div>
-                            <!--Account Name-->
-                            <p style="font-size: x-large;">Ron Grainer</p>
-                        </div>
-                        <!--User Feedback-->
-                        <div style="height: 45%;padding-left: 10%;padding-right: 10%;padding-top: 2%;text-align: left;font-size: larger;">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec eleifend nisi, vel bibendum urna. Ut in sodales tellus.
-                            </p>
-                        </div>
-                        <!--User rating-->
-                        <div style="font-size: 400%; width: 100%;text-align: center;height: 25%;">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-                    </div>
+    
+    <!--Slideshow-->
+    <div style="background-color: var(--beige);padding: 20px;width: 100%;">
+        <div id="slideshow" style="position: relative;max-width: 500px;margin: auto;">
+            <div class="fade">
+                <div style="max-width: 500px;height: 300px;background-color: beige;position: relative;border-radius: 25px;">
+                    <div style="border-bottom-right-radius: 25px;border-top-left-radius: 25px;width: 100px;height: 100px;background-image: url('assets/AT3/susie.jpg');background-position:center;text-align: center;background-size: 100%;"></div>
+                    <h2 style="color: var(--pineGreen);position: absolute;top: 20px;left: 120px;">Susie</h2>
+                    <p style="color: var(--pineGreen);text-align: center; max-width: 500px;height: 100px;padding-left: 20px;padding-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed ac odio a purus porttitor accumsan sed a risus.
+                        Mauris sit amet lacus eros.
+                    </p>
+                    <p style="color: var(--richGreen);user-select: none;text-align: center;padding-left: 20px;padding-right: 20px;font-size: 30px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                 </div>
             </div>
+            <div class="fade">
+                <div style="max-width: 500px;height: 300px;background-color: beige;position: relative;border-radius: 25px;">
+                    <div style="border-bottom-right-radius: 25px;border-top-left-radius: 25px;width: 100px;height: 100px;background-image: url('assets/AT3/aj.jpg');background-position:center;text-align: center;background-size: 100%;"></div>
+                    <h2 style="color: var(--pineGreen);position: absolute;top: 20px;left: 120px;">AJ</h2>
+                    <p style="color: var(--pineGreen);text-align: center; max-width: 500px;height: 100px;padding-left: 20px;padding-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed ac odio a purus porttitor accumsan sed a risus.
+                        Mauris sit amet lacus eros.
+                    </p>
+                    <p style="color: var(--richGreen);user-select: none;text-align: center;padding-left: 20px;padding-right: 20px;font-size: 30px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </div>
+            <div class="fade">
+                <div style="max-width: 500px;height: 300px;background-color: beige;position: relative;border-radius: 25px;">
+                    <div style="border-bottom-right-radius: 25px;border-top-left-radius: 25px;width: 100px;height: 100px;background-image: url('assets/AT3/bob.jpg');background-position:center;text-align: center;background-size:cover;"></div>
+                    <h2 style="color: var(--pineGreen);position: absolute;top: 20px;left: 120px;">Bob</h2>
+                    <p style="color: var(--pineGreen);text-align: center; max-width: 500px;height: 100px;padding-left: 20px;padding-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed ac odio a purus porttitor accumsan sed a risus.
+                        Mauris sit amet lacus eros.
+                    </p>
+                    <p style="color: var(--richGreen);user-select: none;text-align: center;padding-left: 20px;padding-right: 20px;font-size: 30px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </div>
+            <div class="fade">
+                <div style="max-width: 500px;height: 300px;background-color: beige;position: relative;border-radius: 25px;">
+                    <div style="border-bottom-right-radius: 25px;border-top-left-radius: 25px;width: 100px;height: 100px;background-image: url('assets/AT3/jim.jpg');background-position:center;text-align: center;background-size: 100%;"></div>
+                    <h2 style="color: var(--pineGreen);position: absolute;top: 20px;left: 120px;">Jim</h2>
+                    <p style="color: var(--pineGreen);text-align: center; max-width: 500px;height: 100px;padding-left: 20px;padding-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed ac odio a purus porttitor accumsan sed a risus.
+                        Mauris sit amet lacus eros.
+                    </p>
+                    <p style="color: var(--richGreen);user-select: none;text-align: center;padding-left: 20px;padding-right: 20px;font-size: 30px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </div>
+            <div class="fade">
+                <div style="max-width: 500px;height: 300px;background-color: beige;position: relative;border-radius: 25px;">
+                    <div style="border-bottom-right-radius: 25px;border-top-left-radius: 25px;width: 100px;height: 100px;background-image: url('assets/AT3/greg.jpg');background-position:center;text-align: center;background-size: 100%;"></div>
+                    <h2 style="color: var(--pineGreen);position: absolute;top: 20px;left: 120px;">Greg</h2>
+                    <p style="color: var(--pineGreen);text-align: center; max-width: 500px;height: 100px;padding-left: 20px;padding-right: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed ac odio a purus porttitor accumsan sed a risus.
+                        Mauris sit amet lacus eros.
+                    </p>
+                    <p style="color: var(--richGreen);user-select: none;text-align: center;padding-left: 20px;padding-right: 20px;font-size: 30px;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                </div>
+            </div> 
+        </div>
+        <div style="text-align:center;margin: 20px;">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
-    <!--Slideshow-->
-    <div id="slideshow" style="background-color: aqua;" class="flexL"></div>
-
-    <footer style="background-color: var(--pineGreen);text-align: center;font-weight: bold;">
-        <div style="display: inline-block; width: 200px;margin: 10px;">
+    
+    <footer style="background-color: var(--pineGreen);text-align: center;font-weight: bold;padding: 20px;">
+        <a style="display: block;width: 200px;margin: auto;color: white;text-decoration: none;" href="index.html"><h1 style="border: 5px solid var(--richGreen);border-radius: 30px;padding: 5px;">Framed</h1></a>
+        <div style="display: inline-block; width: 200px;margin-left: 10px;margin-right: 10px;">
             <a style="color: white;text-decoration: none;" href="product.html#"><h3 style="background-color: var(--red);border-radius: 25px;padding: 5px;">The Frames</h3></a>
             <a style="color: white;text-decoration: none;" href="product.html#breakdown"><p style="background-color: var(--red);border-radius: 25px;padding: 5px;">The Family</p></a>
             <a style="color: white;text-decoration: none;" href="product.html#feedback"><p style="background-color: var(--red);border-radius: 25px;padding: 5px;">Reviews</p></a>
             <a style="color: white;text-decoration: none;" href="product.html#slideshow"><p style="background-color: var(--red);border-radius: 25px;padding: 5px;">Framed in Action</p></a>
         </div>
-        <div style="display: inline-block; width: 200px;margin: 10px;">
+        <div style="display: inline-block; width: 200px;margin-left: 10px;margin-right: 10px;">
             <a style="color: white;text-decoration: none;" href="about.html#"><h3 style="background-color:  var(--richGreen);border-radius: 25px;padding: 5px;">About Framed</h3></a>
             <a style="color: white;text-decoration: none;" href="about.html#goals"><p style="background-color:  var(--richGreen);border-radius: 25px;padding: 5px;">Our Values</p></a>
             <a style="color: white;text-decoration: none;" href="about.html#time"><p style="background-color:  var(--richGreen);border-radius: 25px;padding: 5px;">A Timeline</p></a>
             <a style="color: white;text-decoration: none;" href="about.html#roles"><p style="background-color:  var(--richGreen);border-radius: 25px;padding: 5px;">The Team</p></a>
         </div>
-        <div style="display: inline-block;width: 200px;margin: 10px;">
+        <div style="display: inline-block;width: 200px;margin-left: 10px;margin-right: 10px;">
             <a style="color: white;text-decoration: none;" href="contact.html#"><h3 style="background-color: var(--beige);border-radius: 25px;padding: 5px;">Contact Us</h3></a>
             <a style="color: white;text-decoration: none;" href="contact.html#connect"><p style="background-color: var(--beige);border-radius: 25px;padding: 5px;">Connect</p></a>
             <a style="color: white;text-decoration: none;" href="contact.html#email"><p style="background-color: var(--beige);border-radius: 25px;padding: 5px;">Email</p></a>
