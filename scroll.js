@@ -1,3 +1,0 @@
-function smooth(){
-    element.scrollIntoView()
-}
