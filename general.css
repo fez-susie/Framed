@@ -1,0 +1,142 @@
+/*Generic & Consistant Styles*/
+/*Colour Pallet*/:root{
+    /*Green*/
+    --richGreen: #527e3e;
+    --pineGreen: #335658;
+    --notGrey: #535b46;
+    --ausGreen: #637f44;
+    --navi2: #607c3c;
+    --navi: #669445;
+    --lightGreen: #669744;
+    /*Brown*/
+    --beige: #aa6c3b;
+    --red: #924229;
+    --brown: #745541;
+    --alsoNotGrey: #7b6266;
+    /*Grey*/
+    --grey: #bcb6ba;
+    --greenGrey: #cfd9d3;
+    --blueGrey: #e3e9f0;
+    --blue: #c0e0ef;
+}
+/*Document Body*/body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: roboto;
+    font-size:medium;
+    font-weight: 300;
+    margin: 0;
+}
+/*Links*/a:hover{
+    cursor: pointer;
+}
+/*Header 2*/h2{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/*Media Screens*/
+*{
+    box-sizing: border-box;
+}
+/*Less than 600px*/@media(max-width:600px){
+    body{
+        font-size: 70%;
+    }
+}
+/*Between 600px and 800px*/@media(max-width:800px){
+    body{
+        font-size: 80%;
+    }
+}
+
+/*Scrolling Navi*/
+#navi{
+    background-color: var(--navi);
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 999;
+}
+#navi a{
+    color: rgb(227, 233, 240);
+    text-transform: uppercase;
+    text-align: center;
+    width: 25%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 100%;
+}
+#navi a:hover{
+    background-color: rgb(227, 233, 240);
+    color: var(--navi2);
+}
+#navi a.active{
+    background-color: var(--navi2);
+    color: rgb(227, 233, 240);
+}
+/*Stationary Navi*/
+.navi{
+    background-color: var(--navi);
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.navi a{
+    color: rgb(227, 233, 240);
+    text-transform: uppercase;
+    text-align: center;
+    width: 25%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 100%;
+}
+.navi a:hover{
+    background-color: rgb(227, 233, 240);
+    color: var(--navi2);
+}
+.navi a.active{
+    background-color: var(--navi2);
+    color: rgb(227, 233, 240);
+}
+
+/*Scroll Bar Styles*/
+/*Width*/::-webkit-scrollbar {
+    width: 10px;
+}
+/*Track*/::-webkit-scrollbar-track {
+    background:var(--grey);
+}
+/*Handle*/::-webkit-scrollbar-thumb {
+    background: var(--pineGreen); 
+}
+/*Handle on hover*/::-webkit-scrollbar-thumb:hover {
+    background: var(--notGrey);
+    cursor: pointer;
+}
+
+/*Footer*/
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer h3,footer p{
+    border-radius: 25px;
+    padding: 5px;
+}
+footer div{
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -1,0 +1,29 @@
+.side{
+    width: 50%;
+}
+.send{
+    order: 2;
+}
+@media only screen and (max-width: 900px) {
+    .side {
+      width: 100%;
+    }
+    .send{
+        order: 4;
+    }
+}
+
+.emailInput{
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.icon{
+    color:white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.icon:hover{
+    color: var(--blue);
+}

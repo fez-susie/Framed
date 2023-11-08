@@ -6,9 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>Frames | Framed</title>
-        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="frames.css">
+        <link rel="stylesheet" href="slideshow.css">
         <script src="navi.js"></script>
         <script src="breakdown.js"></script>
         <script src="slideshow.js"></script>
@@ -31,24 +34,84 @@
 
         <!--Big Image Quote-->
         <div style="text-align: center;height: 500px;background-image: url('assets/Forrest4.jpg');background-position: center;position: relative;">
-            <div style="bottom: 0;position: absolute;transform: translate(-50%);left: 50%;width: 300px;background-color: var(--pineGreen);opacity: 75%;margin: auto;padding-top: 12.5px;padding-bottom: 12.5px;">
-                <h1 style="color: white;">The Framed Family</h1>
+            <div style="color: white;bottom: 0;position: absolute;transform: translate(-50%);left: 50%;width: 300px;padding: 12.5px;background-color: var(--pineGreen);margin: auto;">
+                <h1>The Framed Family</h1>
+                <h3>Choose the Model that's Right For You</h3>
             </div>
         </div>
 
         <!--Breakdown-->
-        <div id="breakdown" style="height:100%;">
-            <div style="height: 10%;width: 100%;display: flex;flex-flow:row nowrap;justify-content:left;">
-                <div style="background-color: var(--red);color: white;width: 22%;text-align: center;font-weight: bold; order: 1;" class="centText"><p class="centText">Choose the model that's right for you:</p></div>
-                <div id="bijouTab" onclick="bijou()" class="centText modelTab"><p class="centText">Bijou</p></div>
-                <div id="standardTab" onclick="standard()" class="centText modelTab"><p class="centText">Standard</p></div>
-                <div id="substantialTab" onclick="substantial()" class="centText modelTab"><p class="centText">Substantial</p></div>
+        <div id="breakdown" class="breakParent">
+            <div style="height: 50px;width: 100%;margin: auto;text-align: center;">
+                <div id="bijouTab" onclick="bijou()" class="modelTab"><p>Bijou</p></div>
+                <div id="standardTab" onclick="standard()" class="modelTab"><p>Standard</p></div>
+                <div id="substantialTab" onclick="substantial()" class="modelTab"><p>Substantial</p></div>
             </div>
-            <div style="display: none;height: 90%;background-color: red;" id="bijouDisp">
-            </div>
-            <div style="display: grid;height: 90%;background-color: green;" id="standardDisp">
-            </div>
-            <div style="display: none;height: 90%;background-color: blue;" id="substantialDisp">
+            <div style="margin-top: 20px;margin-bottom: 20px;height: 500px;">
+                <div id="standard" class="breakdown" style="display: grid;">
+                    <div style="grid-row: 1 / span 2;grid-column: 1;">
+                        <p class="breakdown">Frame in choice of wood</p>
+                    </div>
+                    <div style="grid-row: 3 / span 2;grid-column: 1;">
+                        <p class="breakdown">HD Screen</p>
+                    </div>
+                    <div style="grid-row: 5 / span 2;grid-column: 1;">
+                        <p class="breakdown">Wall Mount or Easel Tripod</p>
+                    </div>
+                    <div style="grid-row: 4;grid-column: 3;">
+                        <p class="breakdown">256 GB Internal Storage</p>
+                    </div>
+                    <div style="grid-row: 5;grid-column: 3;">
+                        <p class="breakdown">SD Port</p>
+                    </div>
+                    <div style="grid-row: 6;grid-column: 3;">
+                        <p class="breakdown">USB C Charing</p>
+                    </div>
+                    <div class="frame standard"></div>
+                </div>
+                <div id="bijou" class="breakdown" style="display: none;">
+                    <div style="grid-row: 1 / span 2;grid-column: 1;">
+                        <p class="breakdown">Frame in choice of wood</p>
+                    </div>
+                    <div style="grid-row: 3 / span 2;grid-column: 1;">
+                        <p class="breakdown">HD Screen</p>
+                    </div>
+                    <div style="grid-row: 5 / span 2;grid-column: 1;">
+                        <p class="breakdown">Wall Mount or Easel Tripod</p>
+                    </div>
+                    <div style="grid-row: 4;grid-column: 3;">
+                        <p class="breakdown">256 GB Internal Storage</p>
+                    </div>
+                    <div style="grid-row: 5;grid-column: 3;">
+                        <p class="breakdown">SD Port</p>
+                    </div>
+                    <div style="grid-row: 6;grid-column: 3;">
+                        <p class="breakdown">USB C Charing</p>
+                    </div>
+                    <div class="frame bijou"></div>
+                </div>
+                <div id="substantial" class="breakdown" style="display: none;">
+                    <div style="grid-row: 1 / span 2;grid-column: 1;">
+                        <p class="breakdown">Frame in choice of wood</p>
+                    </div>
+                    <div style="grid-row: 3 / span 2;grid-column: 1;">
+                        <p class="breakdown">HD Screen</p>
+                    </div>
+                    <div style="grid-row: 5 / span 2;grid-column: 1;">
+                        <p class="breakdown">Wall Mount or Easel Tripod</p>
+                    </div>
+                    
+                    <div style="grid-row: 4;grid-column: 3;">
+                        <p class="breakdown">256 GB Internal Storage</p>
+                    </div>
+                    <div style="grid-row: 5;grid-column: 3;">
+                        <p class="breakdown">SD Port</p>
+                    </div>
+                    <div style="grid-row: 6;grid-column: 3;">
+                        <p class="breakdown">USB C Charing</p>
+                    </div>
+                    <div class="frame substantial"></div>
+                </div>
             </div>
         </div>
 
