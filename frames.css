@@ -23,7 +23,7 @@ div.breakdown{
 }
 p.breakdown{
     background-color: var(--richGreen);
-    border-radius: 20px;
+    
 }
 .frame{
     background-position: center;

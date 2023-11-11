@@ -47,3 +47,15 @@
 .dot:hover, .active{
     background-color: var(--pineGreen);
 }
+
+.stars{
+    color: var(--richGreen);user-select: none;text-align: center;padding-left: 20px;padding-right: 20px;font-size: 30px;
+}
+.cart{
+    max-width: 500px;height: 300px;background-color: beige;position: relative;border-radius: 25px;
+}
+.profile{
+    border-bottom-right-radius: 25px;border-top-left-radius: 25px;width: 100px;height: 100px;background-position:center;text-align: center;background-size: 100%;
+}
+.name{color: var(--pineGreen);position: absolute;top: 20px;left: 120px;}
+.review{color: var(--pineGreen);text-align: center; max-width: 500px;height: 100px;padding-left: 20px;padding-right: 20px;}

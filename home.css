@@ -10,6 +10,18 @@
     padding: 25px;
     opacity: 90%;
 }
+.subtitle{
+    position: sticky;
+    top: 40%;
+    margin: auto;
+    background-color: var(--beige);
+    width: 300px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    opacity: 90%;
+    margin-top: 20px;
+}
 /*Navigation Options*/
 .home{
     text-decoration: none;
